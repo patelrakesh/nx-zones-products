@@ -1,8 +1,8 @@
 import React from "react";
-import { navLink } from "./types/interfaces";
+import { NavLink } from "./types/interfaces";
 
 const page = () => {
-  const links: navLink[] = [
+  const links: NavLink[] = [
     { text: "Exercise 1", route: "exercise1", color: "blue" },
     { text: "Exercise 2", route: "exercise2", color: "red" },
     { text: "Exercise 3", route: "exercise3", color: "lime" },

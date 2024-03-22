@@ -1,4 +1,4 @@
-export interface navLink {
+export interface NavLink {
   text: string;
   route: string;
   color: string;
