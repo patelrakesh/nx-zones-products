@@ -1,34 +1,35 @@
-import React from 'react';
-import ProductList from './components/ProductList';
-type Product = {
-  id: number,
-  title: string,
-  description: string,
-  price: number,
-  discountPercentage: BigInteger,
-  rating: BigInteger,
-  stock: BigInteger,
-  brand: string,
-  category: string,
-  thumbnail: string,
-  images: any
-}
+import React from "react";
+import { navLink } from "./types/interfaces";
 
-const fetchProducts = async () => {
-  const response = await fetch('https://nx-zones-products.vercel.app/ngd/api/products');
-
-  if (!response.ok) {
-    throw new Error('Failed to fetch data')
-  }
-  return response.json()
-};
-
-export default async function PLP() {
-  const data = await fetchProducts()
+const page = () => {
+  const links: navLink[] = [
+    { text: "Exercise 1", route: "exercise1", color: "blue" },
+    { text: "Exercise 2", route: "exercise2", color: "red" },
+    { text: "Exercise 3", route: "exercise3", color: "lime" },
+    { text: "Exercise 4", route: "exercise4", color: "fuchsia" },
+  ];
   return (
     <>
-      <h1>Product List</h1>
-      <ProductList products={data.products} />
+      <div className="flex align-middle justify-center p-10">
+        <p className="text-3xl">Exercises</p>
+      </div>
+      <div className="flex align-middle justify-center">
+        <ul>
+          {links.map((link, i) => (
+            <li className="my-4 ex_links" key={i}>
+              <a
+                style={{ textDecoration: "underline" }}
+                className={`text-${link.color}-500`}
+                href={`/productlist/${link.route}`}
+              >
+                {link.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
-  )
-}
+  );
+};
+
+export default page;
