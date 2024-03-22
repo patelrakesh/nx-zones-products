@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.ex_links:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}

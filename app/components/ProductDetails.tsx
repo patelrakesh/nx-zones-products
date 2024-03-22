@@ -2,6 +2,7 @@ import React from "react";
 import { Product } from "../types/interfaces";
 
 const ProductDetails = ({ product }: { product: Product }) => {
+
   return (
     <div className="container mx-auto p-4">
       <div className="flex grid grid-cols-1 md:grid-cols-2 gap-4">
