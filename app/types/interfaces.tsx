@@ -9,7 +9,7 @@ export interface Product {
     brand: string,
     category: string,
     thumbnail: string,
-    images: any
+    images: [string]
 }
 
 export interface Params { id: number }

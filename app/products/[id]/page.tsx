@@ -17,7 +17,6 @@ const PDP = async ({ params }: { params: Params }) => {
   // if (error) {
   //   return <div>Error: {error.message}</div>;
   // }
-  console.log(params, 'lololo');
   const Data = await fetchProduct(params.id)
   const product = {}
 
