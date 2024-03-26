@@ -4,6 +4,11 @@ export interface NavLink {
   color: string;
 }
 
+export interface NavLinkText {
+  text: string;
+  route: string;
+}
+
 export interface Product {
   id: number;
   title: string;
