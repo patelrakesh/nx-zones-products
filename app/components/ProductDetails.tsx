@@ -1,10 +1,32 @@
 import React from "react";
 import { Product } from "../types/interfaces";
 
-const ProductDetails = ({ product }: { product: Product }) => {
+const fetchProduct = async (id: string, exercise: string): Promise<Product> => {
+  let url = `https://nx-zones-products.vercel.app/ngd/api/products/${id}`;
+  if (exercise === "exercise2") {
+    url =
+      "https://nx-zones-products.vercel.app/ngd/api/products/${id}?random=true";
+  }
+  const response = await fetch(url, { next: { revalidate: 10 } });
+
+  return response.json();
+};
+
+export async function generateStaticParams() {
+  return [{ id: "1" }, { id: "2" }];
+}
+
+const ProductDetails = async ({
+  exercise,
+  id,
+}: {
+  exercise: string;
+  id: string;
+}) => {
+  const product = await fetchProduct(id, exercise);
   return (
     <div className="container mx-auto p-4">
-      <div className="flex grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <img
             src={product.thumbnail}
