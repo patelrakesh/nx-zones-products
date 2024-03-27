@@ -1,36 +1,61 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import ProductList from "./ProductList";
+import ProductList from "../../productlist/[exercise]/page";
 
-describe("ProductList", () => {
-  const products = [
-    {
-      id: 1,
-      title: "Product 1",
-      thumbnail: "product1.jpg",
-      brand: "Brand 1",
-      price: 10,
-    },
-    {
-      id: 2,
-      title: "Product 2",
-      thumbnail: "product2.jpg",
-      brand: "Brand 2",
-      price: 20,
-    },
-  ];
+jest.mock("./fetchProducts");
 
-  test("renders product cards with provided products", () => {
-    render(<ProductList products={products} />);
+test("renders the component correctly with data", async () => {
+  const mockData = {
+    products: [
+      {
+        id: 1,
+        title: "Product 1",
+        brand: "Brand A",
+        rating: 4.5,
+        price: 100,
+        thumbnail: "https://example.com/image.jpg",
+      },
+    ],
+  };
 
-    expect(screen.getByText("Deal Of The Week")).toBeInTheDocument();
+  fetchProducts.mockResolvedValue(mockData);
 
-    expect(screen.getAllByRole("listitem")).toHaveLength(products.length);
+  render(<ProductList params={{ exercise: "test" }} />);
 
-    products.forEach((product) => {
-      expect(screen.getByText(product.title)).toBeInTheDocument();
-      expect(screen.getByText(`Brand: ${product.brand}`)).toBeInTheDocument();
-      expect(screen.getByText(`Price: $${product.price}`)).toBeInTheDocument();
+  expect(screen.getByText("Static and dynamic rendering")).toBeInTheDocument();
+  expect(screen.getByText("Product 1")).toBeInTheDocument();
+  expect(screen.getByText("Brand A")).toBeInTheDocument();
+});
+
+test("handles errors gracefully", async () => {
+  const mockError = new Error("Failed to fetch data");
+  fetchProducts.mockRejectedValue(mockError);
+
+  render(<ProductList params={{ exercise: "test" }} />);
+
+  expect(screen.getByText("Failed to fetch data")).toBeInTheDocument();
+});
+
+test("renders an empty list when no products are available", async () => {
+  fetchProducts.mockResolvedValue({ products: [] });
+
+  render(<ProductList params={{ exercise: "test" }} />);
+
+  expect(screen.getByText("No products found")).toBeInTheDocument();
+});
+
+test("handles loading state", async () => {
+  fetchProducts.mockImplementation(() => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({ products: [] });
+      }, 1000);
     });
   });
+
+  render(<ProductList params={{ exercise: "test" }} />);
+
+  expect(screen.getByText("Loading...")).toBeInTheDocument();
+
+  await screen.findByText("No products found");
 });

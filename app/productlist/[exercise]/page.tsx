@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { NavLinkText } from "../../types/interfaces";
 import { links } from "@/app/utils/constant";
-import RevalidateButton from "../../pages/RevalidateButton";
+import RevalidateButton from "../../components/RevalidateButton";
 import ProductListComp from "@/app/components/ProductList";
 import Loading from "./loading";
 
