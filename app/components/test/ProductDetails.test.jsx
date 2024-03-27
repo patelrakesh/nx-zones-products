@@ -1,32 +1,53 @@
 import React from "react";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 import ProductDetails from "./ProductDetails";
 
-describe("ProductDetails", () => {
-  const product = {
-    id: 1,
-    title: "Product 1",
-    thumbnail: "product1.jpg",
-    brand: "Brand 1",
-    rating: 4.5,
-    price: 10,
-  };
+jest.mock("../types/interfaces", () => ({
+  Product: jest.fn(),
+}));
 
-  test("renders product details with provided product", () => {
-    render(<ProductDetails product={product} />);
+jest.mock("node-fetch", () =>
+  jest.fn().mockImplementation(() =>
+    Promise.resolve({
+      json: () =>
+        Promise.resolve({
+          id: 1,
+          title: "Product Title",
+          brand: "Product Brand",
+          rating: 4.5,
+          price: 100,
+          thumbnail: "product-thumbnail-url",
+        }),
+    })
+  )
+);
 
-    expect(screen.getByText(product.title)).toBeInTheDocument();
-    expect(screen.getByText(`Brand: ${product.brand}`)).toBeInTheDocument();
-    expect(screen.getByText(`Rating: ${product.rating}`)).toBeInTheDocument();
-    expect(screen.getByText(`Price: $${product.price}`)).toBeInTheDocument();
+describe("ProductDetails component", () => {
+  test("renders product details correctly", async () => {
+    const { getByText, getByAltText } = render(
+      <ProductDetails exercise="exercise1" id="1" />
+    );
+
+    await waitFor(() => {
+      expect(getByText("Product Title")).toBeInTheDocument();
+      expect(getByText("Product Brand")).toBeInTheDocument();
+      expect(getByText("Rating: 4.5")).toBeInTheDocument();
+      expect(getByText("Price: $100")).toBeInTheDocument();
+      expect(getByAltText("Product Title")).toBeInTheDocument();
+    });
   });
 
-  test("adds product to cart when 'ADD TO CART' button is clicked", () => {
-    const addToCartMock = jest.fn();
-    render(<ProductDetails product={product} addToCart={addToCartMock} />);
+  test("renders product details with random parameter for exercise2", async () => {
+    const { getByText, getByAltText } = render(
+      <ProductDetails exercise="exercise2" id="1" />
+    );
 
-    fireEvent.click(screen.getByText("ADD TO CART"));
-
-    expect(addToCartMock).toHaveBeenCalledWith(product);
+    await waitFor(() => {
+      expect(getByText("Product Title")).toBeInTheDocument();
+      expect(getByText("Product Brand")).toBeInTheDocument();
+      expect(getByText("Rating: 4.5")).toBeInTheDocument();
+      expect(getByText("Price: $100")).toBeInTheDocument();
+      expect(getByAltText("Product Title")).toBeInTheDocument();
+    });
   });
 });
