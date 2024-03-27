@@ -4,7 +4,8 @@ import { Product } from "../../types/interfaces";
 
 const fetchProducts = async (exercise: string) => {
   const response = await fetch(
-    "https://nx-zones-products.vercel.app/ngd/api/products"
+    "https://nx-zones-products.vercel.app/ngd/api/products?random=true",
+    {next:{revalidate: 15}}
   );
 
   if (!response.ok) {
@@ -17,7 +18,7 @@ const ProductList = async ({ params }: { params: { exercise: string } }) => {
   const exercise: string = params.exercise;
 
   const Data = await fetchProducts(exercise);
-
+  const dateTime = new Date();
   const products: Product[] = Data.products;
 
   return (
@@ -25,6 +26,7 @@ const ProductList = async ({ params }: { params: { exercise: string } }) => {
       <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight mb-8 text-center">
         Static and dynamic rendering
       </h2>
+      <h4>{dateTime.toLocaleString()}</h4>
       <ul className="grid grid-cols-3 gap-4">
         {products.length > 0 &&
           products.map((product) => (
