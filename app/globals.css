@@ -7,3 +7,6 @@
     transform: scale(1.05);
     transition: 0.5s;
 }
+.ex_links{
+    font-weight: 600;
+}
