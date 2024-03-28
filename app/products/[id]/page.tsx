@@ -1,6 +1,12 @@
 import React from "react";
 import ProductDetails from "@/app/components/ProductDetails";
 
+
+export async function generateStaticParams() {
+  return [{ id: "1" }, { id: "2" }];
+}
+
+
 const PDP = async ({
   params,
 }: {

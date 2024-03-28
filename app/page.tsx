@@ -12,8 +12,7 @@ const page = () => {
           {LandingLinks.map((link, i) => (
             <li className="my-4 ex_links" key={i}>
               <a
-                style={{ textDecoration: "underline" }}
-                className={`text-${link.color}-500`}
+                style={{ textDecoration: "none" }}
                 href={`/productlist/${link.route}`}
               >
                 {link.text}
