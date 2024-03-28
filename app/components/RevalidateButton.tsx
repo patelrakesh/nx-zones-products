@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
-// import { revalidatePath } from "next/cache";
-// import { usePathname } from "next/navigation";
 
 const RevalidateButton = () => {
   const router = useRouter();

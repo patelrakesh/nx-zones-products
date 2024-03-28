@@ -25,7 +25,7 @@ const ProductDetails = async ({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <img
-            src={product.thumbnail}
+            src={product?.images && product?.images.length > 0 ? product?.images[0] : ""}
             alt={product.title}
             width={400}
             height={400}
