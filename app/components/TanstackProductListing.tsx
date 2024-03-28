@@ -4,6 +4,7 @@ import { useQuery, UseQueryOptions } from "@tanstack/react-query";
 import { Product, Data } from "@/app/types/interfaces";
 import CachedProducts from "@/app/components/CachedProducts";
 import { fetchExercise4Data } from "../utils/fetchData";
+import BackButton from "./BackButton";
 
 const TanstackProductListing = ({
   params,
@@ -25,6 +26,7 @@ const TanstackProductListing = ({
       {isPending && <div>Loading...</div>}
       {!isPending && (
         <div className="container mx-auto">
+          <BackButton/>
           <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight mb-8 text-center">
             {exercise === "cached-products"
               ? "Tanstack Query Cached Products"

@@ -5,6 +5,7 @@ const CachedProducts = ({ handleClick }: { handleClick: () => void }) => {
  const router = usePathname()
   const pathSegments = router.split('/');
   const exerciseName = pathSegments[pathSegments.length - 1];
+  console.log("console_route",exerciseName)
   return (
     <>
       {exerciseName === "exercise-4" && (
