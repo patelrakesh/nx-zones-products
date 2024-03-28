@@ -1,13 +1,7 @@
 import React from "react";
-import { navLink } from "./types/interfaces";
+import { LandingLinks } from "./utils/constant";
 
 const page = () => {
-  const links: navLink[] = [
-    { text: "Exercise 1", route: "exercise1", color: "blue" },
-    { text: "Exercise 2", route: "exercise2", color: "red" },
-    { text: "Exercise 3", route: "exercise3", color: "lime" },
-    { text: "Exercise 4", route: "exercise4", color: "fuchsia" },
-  ];
   return (
     <>
       <div className="flex align-middle justify-center p-10">
@@ -15,7 +9,7 @@ const page = () => {
       </div>
       <div className="flex align-middle justify-center">
         <ul>
-          {links.map((link, i) => (
+          {LandingLinks.map((link, i) => (
             <li className="my-4 ex_links" key={i}>
               <a
                 style={{ textDecoration: "underline" }}

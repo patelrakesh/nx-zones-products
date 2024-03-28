@@ -1,4 +1,4 @@
-import react, {useState} from 'react';
+import {useState} from 'react';
 import {
     QueryClient,
     QueryClientProvider,
@@ -7,11 +7,8 @@ import { AppProps } from 'next/app';
 import '../styles/global.css'; // Import your global CSS styles
 
 function MyApp({ Component, pageProps }: AppProps) {
-    const [queryClient] = useState(() => new QueryClient())
   return (
-    <QueryClientProvider client={queryClient}>
         <Component {...pageProps} />
-    </QueryClientProvider>
   );
 }
 
