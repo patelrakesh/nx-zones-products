@@ -12,10 +12,6 @@ const fetchProduct = async (id: string, exercise: string): Promise<Product> => {
   return response.json();
 };
 
-export async function generateStaticParams() {
-  return [{ id: "1" }, { id: "2" }];
-}
-
 const ProductDetails = async ({
   exercise,
   id,
@@ -29,7 +25,7 @@ const ProductDetails = async ({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <img
-            src={product.thumbnail}
+            src={product?.images && product?.images.length > 0 ? product?.images[0] : ""}
             alt={product.title}
             width={400}
             height={400}
@@ -48,18 +44,14 @@ const ProductDetails = async ({
               <button type="button" className="bg-gray-300 p-2 rounded-l">
                 -
               </button>
-              <input
-                type="number"
-                value={1}
-                className="w-10 text-center border border-gray-300"
-              />
+              <span className="w-7 flex justify-center items-center">1</span>
               <button type="button" className="bg-gray-300 p-2 rounded-r">
                 +
               </button>
             </div>
             <button
               type="submit"
-              className="bg-blue-500 text-white font-bold py-2 px-4 rounded"
+              className="bg-blue-500 font-bold p-2 px-4 rounded"
             >
               ADD TO CART
             </button>

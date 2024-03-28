@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { UseQueryOptions, QueryClient } from "@tanstack/react-query";
-import { Data } from "../types/interfaces";
+import { Data, Product } from "@/app/types/interfaces";
 
 const TanstackProductListing = ({
   params,
@@ -10,9 +10,8 @@ const TanstackProductListing = ({
 }) => {
   const exercise: string = params.exercise;
   const queryClient = new QueryClient();
-  const [products, setProducts] = useState<any>([]);
+  const [products, setProducts] = useState([]);
   const [isPending, setIsPending] = useState(false);
-  // const router =  useRouter();
 
   const fetchProducts = async () => {
     const response = await fetch(
@@ -102,7 +101,7 @@ const TanstackProductListing = ({
           {/* <CachedProducts refetch={refetch}/> */}
           <ul className="grid grid-cols-3 gap-4">
             {products.length > 0 &&
-              products.map((product: any) => (
+              products.map((product: Product) => (
                 <li key={product.id}>
                   <div className="bg-white rounded-lg shadow-md p-6">
                     <a href={`/products/${product.id}`}>

@@ -14,7 +14,7 @@ export const fetchExercise4Data = async () => {
 };
 
 export const fetchExerciseData = async (exercise: string) => {
-  let api: string | URL | Request = ""; // Initialize api here
+  let api: string | URL | Request = "";
   let options;
   switch (exercise) {
     case "exercise1":

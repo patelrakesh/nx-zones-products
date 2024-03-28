@@ -29,7 +29,7 @@ const ProductListComp = async ({ exercise }: { exercise: string }) => {
             <div className="bg-white rounded-lg shadow-md p-6">
               <a href={`/products/${product.id}`}>
                 <img
-                  src={product.thumbnail}
+                  src={product?.images && product?.images.length > 0 ? product?.images[0] : ""}
                   alt={product.title}
                   className="h-48 w-full object-cover rounded-t-lg"
                 />
