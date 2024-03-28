@@ -1,18 +1,6 @@
 import React, { Suspense } from "react";
-import {
-  useQuery,
-  UseQueryOptions,
-  UseQueryResult,
-  QueryClient,
-} from "@tanstack/react-query";
-import "./productlist.css";
-import { Product, Data, NavLinkText } from "../../types/interfaces";
+import { NavLinkText } from "../../types/interfaces";
 import { links } from "@/app/utils/constant";
-import { fetchExerciseData, fetchExercise4Data } from "@/app/utils/fetchData";
-import { revalidatePath } from "next/cache";
-
-import Revalidation from "../../examples/Revalidation";
-import CachedProducts from "@/app/examples/CachedProducts";
 import RevalidateButton from "../../components/RevalidateButton";
 import ProductListComp from "@/app/components/ProductList";
 import Loading from "./loading";
