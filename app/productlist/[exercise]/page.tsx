@@ -7,6 +7,7 @@ import Loading from "./loading";
 
 const ProductList = async ({ params }: { params: { exercise: string } }) => {
   const exercise: string = params.exercise;
+  console.log("console_exercise", exercise);
 
   function findExerciseByRoute(route: string) {
     return links.find((exercise: NavLinkText) => exercise.route === route);
