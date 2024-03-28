@@ -12,7 +12,6 @@ const CachedProducts = (refetch?:any) => {
  const handleReload = (event:any)=>{
   event.preventDefault();
   // refetch()
-  alert("ajhio")
   console.log("console_handleReload")
     // queryClient.invalidateQueries({ queryKey: ["products"] });
     // handleClick("testing")

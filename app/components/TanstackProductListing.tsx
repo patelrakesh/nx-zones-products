@@ -70,7 +70,6 @@ const TanstackProductListing = ({ params }: { params: { exercise: string } }) =>
   // const products: Product[] = data?.products ?? [];
 
   const handleClick = async() => {
-    alert("hiiii")
     await queryClient.refetchQueries({
       queryKey: ['products'],
       // exact: true,
