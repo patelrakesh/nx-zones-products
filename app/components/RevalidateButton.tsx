@@ -1,18 +1,31 @@
 "use client";
 import React from "react";
-import { revalidatePath } from "next/cache";
-import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
+// import { revalidatePath } from "next/cache";
+// import { usePathname } from "next/navigation";
 
-const RevalidateButton = ({ exercise }: { exercise: string }) => {
+const RevalidateButton = () => {
+  const router = useRouter();
+
   const dateTime = new Date();
-  const pathname = usePathname();
 
-  const revalidateByPath = () => {
-    revalidatePath(pathname);
+  const path = "/productlist/exercise2";
+  const tag = "product";
+
+  const revalidateByPath = async () => {
+    const res = await fetch(
+      `http://localhost:3000/api/revalidatePath?path=${path}`
+    );
+    const data = await res.json();
+    router.refresh();
   };
 
-  const revalidateByTag = () => {
-    // revalidatePath(pathname, 'page');
+  const revalidateByTag = async () => {
+    const res = await fetch(
+      `http://localhost:3000/api/revalidateTag?tag=${tag}`
+    );
+    const data = await res.json();
+    router.refresh();
   };
 
   return (
@@ -31,7 +44,7 @@ const RevalidateButton = ({ exercise }: { exercise: string }) => {
           REVALIDATE BY PATH
         </button>
       </div>
-      <h4 className="text-center">{dateTime.toLocaleString()}</h4>
+      <p className="text-center">{dateTime.toLocaleString()}</p>
     </>
   );
 };
