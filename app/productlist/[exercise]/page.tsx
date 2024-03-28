@@ -3,7 +3,8 @@ import { NavLinkText } from "../../types/interfaces";
 import { links } from "@/app/utils/constant";
 import RevalidateButton from "../../components/RevalidateButton";
 import ProductListComp from "@/app/components/ProductList";
-import Loading from "./loading";
+import Loading from "./loading1";
+import BackButton from "@/app/components/BackButton";
 
 const ProductList = async ({ params }: { params: { exercise: string } }) => {
   const exercise: string = params.exercise;
@@ -15,10 +16,11 @@ const ProductList = async ({ params }: { params: { exercise: string } }) => {
 
   return (
     <div className="container mx-auto">
+      <BackButton/>
       <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight mb-8 mt-5 text-center">
         {exerciseText?.text}
       </h2>
-      {exercise === "exercise2" && <RevalidateButton exercise={exercise} />}
+      {exercise === "exercise2" && <RevalidateButton />}
       {exercise === "exercise3" ? (
         <Suspense fallback={<Loading />}>
           <ProductListComp exercise={exercise} />

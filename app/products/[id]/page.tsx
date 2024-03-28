@@ -1,9 +1,12 @@
 import React from "react";
 import ProductDetails from "@/app/components/ProductDetails";
+import BackButton from "@/app/components/BackButton";
+
 
 export async function generateStaticParams() {
   return [{ id: "1" }, { id: "2" }];
 }
+
 
 const PDP = async ({
   params,
@@ -13,7 +16,7 @@ const PDP = async ({
   return (
     <div className="p-5">
       <span className="text-cyan-900 font-extrabold">
-        <a href={`/productlist/${params.exercise}`}>{`< Back`}</a>
+        <BackButton/>
       </span>
       <h1 className="text-xl">Product Details of Product Id : {params.id}</h1>
       <ProductDetails exercise={params.exercise} id={params.id} />
