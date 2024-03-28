@@ -1,8 +1,8 @@
 import React from "react";
 import { render, waitFor } from "@testing-library/react";
-import ProductDetails from "./ProductDetails";
+import ProductDetails from "../app/components/ProductDetails";
 
-jest.mock("../types/interfaces", () => ({
+jest.mock("../app/types/interfaces", () => ({
   Product: jest.fn(),
 }));
 

@@ -22,7 +22,10 @@ export const fetchExerciseData = async (exercise: string) => {
       break;
     case "exercise2":
       api = allProdRandom;
-      options = { next: { revalidate: 120 } };
+      options = { next: { revalidate: 120, tags: ["product"] } };
+      break;
+    case "exercise3":
+      api = allProd;
       break;
     default:
       throw new Error(`Invalid exercise type: ${exercise}`);

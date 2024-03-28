@@ -1,6 +1,7 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import RevalidateButton from "../RevalidateButton";
+import RevalidateButton from "../app/components/RevalidateButton";
 
 jest.mock("next/navigation", () => ({
   usePathname: jest.fn().mockReturnValue("/example-path"),
