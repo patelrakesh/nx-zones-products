@@ -1,5 +1,3 @@
-import { useQuery, UseQueryOptions, UseQueryResult } from "@tanstack/react-query";
-import { Product, Data } from "../types/interfaces";
 import { allProd, allProdRandom } from "./api";
 
 const fetchProducts = async (api: string | URL | Request, options?: any) => {
@@ -16,9 +14,8 @@ export const fetchExercise4Data = async () => {
   return data;
 };
 
-
 export const fetchExerciseData = async (exercise: string) => {
-  let api: string | URL | Request = ""; // Initialize api here
+  let api: string | URL | Request = "";
   let options;
   console.log("console_res_0", exercise);
   switch (exercise) {
@@ -31,13 +28,9 @@ export const fetchExerciseData = async (exercise: string) => {
       api = allProdRandom;
       options = { next: { revalidate: 120 } };
       break;
-    // case "exercise3":
-      // Define API for Exercise 3
-      // break;
     default:
       throw new Error(`Invalid exercise type: ${exercise}`);
   }
-  const data = await fetchProducts(api,options);
-  console.log("console_fetch_res",data)
+  const data = await fetchProducts(api, options);
   return data;
 };

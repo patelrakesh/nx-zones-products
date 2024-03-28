@@ -5,7 +5,7 @@ const page = () => {
   return (
     <>
       <div className="flex align-middle justify-center p-10">
-        <p className="text-3xl">Exercises</p>
+        <p className="text-3xl" data-testid="pageTitle">Exercises</p>
       </div>
       <div className="flex align-middle justify-center">
         <ul>
