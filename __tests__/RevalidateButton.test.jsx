@@ -1,31 +1,43 @@
-import React from "react";
+import '@testing-library/jest-dom';
 import { render, fireEvent } from "@testing-library/react";
 import RevalidateButton from "../app/components/RevalidateButton";
 
-jest.mock("next/navigation", () => ({
-  usePathname: jest.fn().mockReturnValue("/example-path"),
+jest.mock('next/router', () => ({
+  useRouter: () => ({
+    refresh: jest.fn(),
+  }),
 }));
 
-jest.mock("next/cache", () => ({
-  revalidatePath: jest.fn(),
-}));
+describe('RevalidateButton component', () => {
+  it('should trigger revalidateByPath function on click', async () => {
+    const { getByText } = render(<RevalidateButton />);
+    const revalidateByPathButton = getByText('REVALIDATE BY PATH');
 
-describe("RevalidateButton component", () => {
-  test("renders correctly", () => {
-    const { getByText } = render(<RevalidateButton exercise="exercise" />);
-    expect(getByText("REVALIDATE BY TAG")).toBeInTheDocument();
-    expect(getByText("REVALIDATE BY PATH")).toBeInTheDocument();
+    fireEvent.click(revalidateByPathButton);
+
+    // Wait for revalidate function to be called
+    await waitFor(() => {
+      expect(window.fetch).toHaveBeenCalledWith(
+        'http://localhost:3000/api/revalidatePath?path=/productlist/exercise2'
+      );
+    });
+
+    expect(window.location.reload).toHaveBeenCalled();
   });
 
-  test("revalidateByTag button click calls revalidatePath with correct parameters", () => {
-    const { getByText } = render(<RevalidateButton exercise="exercise" />);
-    fireEvent.click(getByText("REVALIDATE BY TAG"));
-    expect(revalidatePath).toHaveBeenCalledWith("/example-path");
-  });
+  it('should trigger revalidateByTag function on click', async () => {
+    const { getByText } = render(<RevalidateButton />);
+    const revalidateByTagButton = getByText('REVALIDATE BY TAG');
 
-  test("revalidateByPath button click calls revalidatePath with correct parameters", () => {
-    const { getByText } = render(<RevalidateButton exercise="exercise" />);
-    fireEvent.click(getByText("REVALIDATE BY PATH"));
-    expect(revalidatePath).toHaveBeenCalledWith("/example-path");
+    fireEvent.click(revalidateByTagButton);
+
+    // Wait for revalidate function to be called
+    await waitFor(() => {
+      expect(window.fetch).toHaveBeenCalledWith(
+        'http://localhost:3000/api/revalidateTag?tag=product'
+      );
+    });
+
+    expect(window.location.reload).toHaveBeenCalled();
   });
 });

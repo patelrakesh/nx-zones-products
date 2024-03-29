@@ -1,4 +1,4 @@
-import React from 'react';
+import '@testing-library/jest-dom';
 import { render, screen, waitFor } from '@testing-library/react';
 // import '@testing-library/jest-dom/extend-expect'; // Importing extend-expect for additional matchers
 import ProductListComp from '../app/components/ProductList';
