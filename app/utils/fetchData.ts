@@ -33,3 +33,11 @@ export const fetchExerciseData = async (exercise: string) => {
   const data = await fetchProducts(api, options);
   return data;
 };
+
+export const revalidate = async (type: string, router: any) => {
+  const path =
+    type === "revalidateTag" ? "?tag=product" : "?path=/productlist/exercise2";
+
+  await fetch(`https://nx-zones-products-three.vercel.app/api/${type}${path}`);
+  router.refresh();
+};
