@@ -3,7 +3,7 @@ import { NavLinkText } from "../../types/interfaces";
 import { links } from "@/app/utils/constant";
 import RevalidateButton from "../../components/RevalidateButton";
 import ProductListComp from "@/app/components/ProductList";
-import Loading from "./loading1";
+import Loading from "./loading";
 import BackButton from "@/app/components/BackButton";
 
 const ProductList = async ({ params }: { params: { exercise: string } }) => {
