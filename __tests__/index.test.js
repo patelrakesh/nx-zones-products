@@ -10,7 +10,6 @@ describe('Page', () => {
     expect(heading).toBeInTheDocument();
     expect(heading.textContent).toBe('Exercises');
 
-    // Check if each link from LandingLinks renders correctly
     LandingLinks.forEach((link) => {
       const linkElement = screen.getByText(link.text);
       expect(linkElement).toBeInTheDocument();

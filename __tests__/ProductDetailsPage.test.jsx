@@ -20,7 +20,6 @@ describe('PDP component', () => {
 
   test('renders component with BackButton and product details', async () => {
     render(<PDP params={{ exercise: 'exercise1', id: '1' }} />);
-    // Ensure BackButton and product details are rendered
     expect(screen.getByTestId('back-button')).toBeInTheDocument();
     expect(screen.getByText('Product Details of Product Id : 1')).toBeInTheDocument();
     expect(await screen.findByTestId('product-details')).toBeInTheDocument();

@@ -12,7 +12,6 @@ describe('CachedProducts component', () => {
   });
 
   test('renders link when pathname is "exercise-4"', () => {
-    // Mock usePathname hook to return "exercise-4"
     const mockUsePathname = jest.fn().mockReturnValue('exercise-4');
     require('next/navigation').usePathname = mockUsePathname;
 
@@ -23,7 +22,6 @@ describe('CachedProducts component', () => {
   });
 
   test('renders button when pathname is "cached-products"', () => {
-    // Mock usePathname hook to return "cached-products"
     const mockUsePathname = jest.fn().mockReturnValue('cached-products');
     require('next/navigation').usePathname = mockUsePathname;
 
@@ -34,11 +32,9 @@ describe('CachedProducts component', () => {
   });
 
   test('calls handleClick when button is clicked', () => {
-    // Mock usePathname hook to return "cached-products"
     const mockUsePathname = jest.fn().mockReturnValue('cached-products');
     require('next/navigation').usePathname = mockUsePathname;
 
-    // Mock handleClick function
     const mockHandleClick = jest.fn();
 
     const { getByText } = render(<CachedProducts handleClick={mockHandleClick} />);

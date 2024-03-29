@@ -25,25 +25,20 @@ describe('ProductCard component', () => {
 
     render(<ProductCard products={products} />);
 
-    // Check if product titles are rendered
     expect(screen.getByText('Product 1')).toBeInTheDocument();
     expect(screen.getByText('Product 2')).toBeInTheDocument();
 
-    // Check if brand names are rendered
     expect(screen.getByText('Brand A')).toBeInTheDocument();
     expect(screen.getByText('Brand B')).toBeInTheDocument();
 
-    // Check if ratings are rendered
     expect(screen.getByText('Rating: 4.5')).toBeInTheDocument();
     expect(screen.getByText('Rating: 3.8')).toBeInTheDocument();
 
-    // Check if prices are rendered
     expect(screen.getByText('Price: $10')).toBeInTheDocument();
     expect(screen.getByText('Price: $15')).toBeInTheDocument();
 
-    // Check if images are rendered
     const productImages = screen.getAllByAltText(/Product/);
-    expect(productImages.length).toBe(3); // 2 images for the first product and 1 image for the second product
+    expect(productImages.length).toBe(3);
   });
 
   it('renders no product cards when products array is empty', () => {

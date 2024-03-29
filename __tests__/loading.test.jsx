@@ -11,7 +11,7 @@ describe('Loading component', () => {
     test('renders loading component with correct styles', () => {
       const { container } = render(<Loading />);
       const loadingDiv = container.firstChild;
-      // Assert CSS classes or styles applied to the loading component
+      
       expect(loadingDiv).toHaveClass('h-96');
       expect(loadingDiv).toHaveClass('flex');
       expect(loadingDiv).toHaveClass('justify-center');

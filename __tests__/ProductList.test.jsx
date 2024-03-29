@@ -19,7 +19,6 @@ describe('ProductListComp', () => {
   });
 
   test('renders product list correctly', async () => {
-    // Mock data to be returned by fetchExerciseData
     const mockData = {
       products: [
         {
@@ -41,18 +40,15 @@ describe('ProductListComp', () => {
       ],
     };
 
-    // Mocking fetchExerciseData to return mock data
     fetchExerciseData.mockResolvedValue(mockData);
 
     render(<ProductListComp exercise="exercise1" />);
 
-    // Wait for products to be loaded
     await waitFor(() => {
       const productElements = screen.getAllByTestId('product-card');
       expect(productElements.length).toBe(2); // Assuming there are two products in the mock data
     });
 
-    // Check if ProductCard component is rendered with correct props
     expect(screen.getByText('Product 1')).toBeInTheDocument();
     expect(screen.getByText('Brand: Brand 1')).toBeInTheDocument();
     expect(screen.getByText('Rating: 4.5')).toBeInTheDocument();
@@ -63,7 +59,6 @@ describe('ProductListComp', () => {
     expect(screen.getByText('Rating: 3.8')).toBeInTheDocument();
     expect(screen.getByText('Price: 15.49')).toBeInTheDocument();
 
-    // Check that fetchExerciseData is called with the correct exercise
     expect(fetchExerciseData).toHaveBeenCalledWith('exercise1');
   });
 });
