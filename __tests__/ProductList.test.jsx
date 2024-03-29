@@ -1,21 +1,24 @@
 import '@testing-library/jest-dom';
 import { render, screen, waitFor } from '@testing-library/react';
-// import '@testing-library/jest-dom/extend-expect'; // Importing extend-expect for additional matchers
 import ProductListComp from '../app/components/ProductList';
 import { fetchExerciseData } from '../app/utils/fetchData';
 
-// Mocking fetchData module
-jest.mock('../app/utils/fetchData');
-// jest.mock('../app/utils/fetchData', () => ({
-//   fetchMock: jest.fn(),
-// }));
+jest.mock('next/router', () => ({
+  useRouter: jest.fn().mockReturnValue({
+    refresh: jest.fn(),
+  }),
+}));
+
+jest.mock('../app/utils/fetchData', () => ({
+  fetchExerciseData: jest.fn(),
+}));
 
 describe('ProductListComp', () => {
   beforeEach(() => {
     jest.clearAllMocks();
-  })
+  });
 
-  it('renders product list correctly', async () => {
+  test('renders product list correctly', async () => {
     // Mock data to be returned by fetchExerciseData
     const mockData = {
       products: [
@@ -59,5 +62,8 @@ describe('ProductListComp', () => {
     expect(screen.getByText('Brand: Brand 2')).toBeInTheDocument();
     expect(screen.getByText('Rating: 3.8')).toBeInTheDocument();
     expect(screen.getByText('Price: 15.49')).toBeInTheDocument();
+
+    // Check that fetchExerciseData is called with the correct exercise
+    expect(fetchExerciseData).toHaveBeenCalledWith('exercise1');
   });
 });

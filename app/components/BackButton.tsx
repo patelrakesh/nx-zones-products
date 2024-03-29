@@ -5,14 +5,15 @@ import React from "react";
 const BackButton = () => {
   const router = useRouter();
   return (
-    <div
+    <button
+      data-testid="backButton"
       onClick={() => {
         router.back();
       }}
       className="cursor-pointer font-bold"
     >
       {`< Back`}
-    </div>
+    </button>
   );
 };
 

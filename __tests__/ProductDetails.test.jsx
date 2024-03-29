@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-import { render, waitFor } from "@testing-library/react";
+import { render, waitFor, screen } from "@testing-library/react";
 import ProductDetails from "../app/components/ProductDetails";
 
 jest.mock("../app/types/interfaces", () => ({
@@ -24,30 +24,30 @@ jest.mock("node-fetch", () =>
 
 describe("ProductDetails component", () => {
   test("renders product details correctly", async () => {
-    const { getByText, getByAltText } = render(
+    render(
       <ProductDetails exercise="exercise1" id="1" />
     );
 
     await waitFor(() => {
-      expect(getByText("Product Title")).toBeInTheDocument();
-      expect(getByText("Product Brand")).toBeInTheDocument();
-      expect(getByText("Rating: 4.5")).toBeInTheDocument();
-      expect(getByText("Price: $100")).toBeInTheDocument();
-      expect(getByAltText("Product Title")).toBeInTheDocument();
+      expect(screen.getByText("Product Title")).toBeInTheDocument();
+      expect(screen.getByText("Product Brand")).toBeInTheDocument();
+      expect(screen.getByText("Rating: 4.5")).toBeInTheDocument();
+      expect(screen.getByText("Price: $100")).toBeInTheDocument();
+      expect(screen.getByAltText("Product Title")).toBeInTheDocument();
     });
   });
 
   test("renders product details with random parameter for exercise2", async () => {
-    const { getByText, getByAltText } = render(
+    render(
       <ProductDetails exercise="exercise2" id="1" />
     );
 
     await waitFor(() => {
-      expect(getByText("Product Title")).toBeInTheDocument();
-      expect(getByText("Product Brand")).toBeInTheDocument();
-      expect(getByText("Rating: 4.5")).toBeInTheDocument();
-      expect(getByText("Price: $100")).toBeInTheDocument();
-      expect(getByAltText("Product Title")).toBeInTheDocument();
+      expect(screen.getByText("Product Title")).toBeInTheDocument();
+      expect(screen.getByText("Product Brand")).toBeInTheDocument();
+      expect(screen.getByText("Rating: 4.5")).toBeInTheDocument();
+      expect(screen.getByText("Price: $100")).toBeInTheDocument();
+      expect(screen.getByAltText("Product Title")).toBeInTheDocument();
     });
   });
 });
