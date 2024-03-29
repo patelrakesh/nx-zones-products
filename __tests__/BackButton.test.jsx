@@ -24,8 +24,8 @@ describe('BackButton Component', () => {
       back: mockBack,
     });
 
-    const { getByTestId } = render(<BackButton />);
-    const backButton = getByTestId('backButton');
+    render(<BackButton />);
+    const backButton = screen.getByTestId('backButton');
 
     fireEvent.click(backButton);
 

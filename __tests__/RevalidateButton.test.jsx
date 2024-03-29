@@ -1,43 +1,70 @@
 import '@testing-library/jest-dom';
-import { render, fireEvent } from "@testing-library/react";
+import { render, screen, waitFor } from '@testing-library/react';
 import RevalidateButton from "../app/components/RevalidateButton";
+import { useRouter } from 'next/router';
 
 jest.mock('next/router', () => ({
-  useRouter: () => ({
-    refresh: jest.fn(),
-  }),
+  useRouter: jest.fn(),
 }));
 
 describe('RevalidateButton component', () => {
-  it('should trigger revalidateByPath function on click', async () => {
-    const { getByText } = render(<RevalidateButton />);
-    const revalidateByPathButton = getByText('REVALIDATE BY PATH');
+  let useRouterMock;
 
-    fireEvent.click(revalidateByPathButton);
-
-    // Wait for revalidate function to be called
-    await waitFor(() => {
-      expect(window.fetch).toHaveBeenCalledWith(
-        'http://localhost:3000/api/revalidatePath?path=/productlist/exercise2'
-      );
-    });
-
-    expect(window.location.reload).toHaveBeenCalled();
+  beforeEach(() => {
+    useRouterMock = {
+      refresh: jest.fn(),
+    };
+    useRouter.mockReturnValue(useRouterMock);
   });
 
-  it('should trigger revalidateByTag function on click', async () => {
-    const { getByText } = render(<RevalidateButton />);
-    const revalidateByTagButton = getByText('REVALIDATE BY TAG');
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
 
-    fireEvent.click(revalidateByTagButton);
+  test('renders a revadidate-by-tag button', () => {
+    render(<RevalidateButton />)
+ 
+    const heading = screen.getByTestId('revadidate-by-tag')
+    expect(heading).toBeInTheDocument();
+    expect(heading.textContent).toBe('REVALIDATE BY TAG');
 
-    // Wait for revalidate function to be called
+  })
+  test('renders a revadidate-by-path button', () => {
+    render(<RevalidateButton />)
+ 
+    const heading = screen.getByTestId('revadidate-by-path')
+    expect(heading).toBeInTheDocument();
+    expect(heading.textContent).toBe('REVALIDATE BY PATH');
+
+  })
+
+  test('should trigger revalidateByPath function on click', async () => {
+    render(<RevalidateButton />);
+    const revalidateByPathButton = screen.getByText('REVALIDATE BY PATH');
+    expect(revalidateByPathButton).toBeInTheDocument();
+    fireEvent.click(revalidateByPathButton);
+
     await waitFor(() => {
-      expect(window.fetch).toHaveBeenCalledWith(
-        'http://localhost:3000/api/revalidateTag?tag=product'
+      expect(fetch).toHaveBeenCalledWith(
+        'https://nx-zones-products-three.vercel.app/api/revalidatePath?path=/productlist/exercise2'
       );
     });
+    
+    expect(useRouterMock.refresh).toHaveBeenCalled();
+  });
 
-    expect(window.location.reload).toHaveBeenCalled();
+  test('should trigger revalidateByTag function on click', async () => {
+    render(<RevalidateButton />);
+    const revalidateByTagButton = screen.getByText('REVALIDATE BY TAG');
+    expect(revalidateByTagButton).toBeInTheDocument();
+    fireEvent.click(revalidateByTagButton);
+
+    await waitFor(() => {
+      expect(fetch).toHaveBeenCalledWith(
+        'https://nx-zones-products-three.vercel.app/api/revalidatePath?path=/productlist/exercise2'
+      );
+    });
+    
+    expect(useRouterMock.refresh).toHaveBeenCalled();
   });
 });

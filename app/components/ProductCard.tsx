@@ -3,7 +3,7 @@ import { Product } from "../types/interfaces";
 
 const ProductCard = ({ products }: { products: Product[] }) => {
   return (
-    <ul className="grid grid-cols-3 gap-4">
+    <ul data-testid="product-card" className="grid grid-cols-3 gap-4">
       {products.length > 0 &&
         products.map((product: Product) => (
           <li key={product?.id}>
