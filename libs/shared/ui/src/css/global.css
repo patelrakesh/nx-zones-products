@@ -1,0 +1,143 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  /* text color variables */
+  --color-default: #fff;
+  --color-primary: #f27930;
+
+  /* text color variables */
+  --color-text-primary: #171a21;
+  --color-text-secondary: #8690a3;
+
+  /* background color variables */
+  --color-background-primary: #f27930;
+  --color-background-secondary: #3597ec;
+
+  /* placeholder color variables */
+  --color-placeholder-primary: #c2c7d1;
+
+  /* border color variables */
+  --color-border-primary: #f27930;
+  --color-border-secondary: #3b99e9;
+
+  /* shadow color variables */
+  --color-shadow-primary: #171a211f;
+
+  /* font size variables */
+  --size-font-2xs: 0.512rem;
+  --size-font-xs: 0.64rem;
+  --size-font-sm: 0.8rem;
+  --size-font-base: 1rem;
+  --size-font-lg: 1.25rem;
+  --size-font-xl: 1.563rem;
+  --size-font-2xl: 1.953rem;
+
+  /* line height variables */
+  --line-height-2xs: 0.687rem;
+  --line-height-xs: 0.875rem;
+  --line-height-sm: 1.125rem;
+  --line-height-base: 1.437rem;
+  --line-height-lg: 1.75rem;
+  --line-height-xl: 2.187rem;
+  --line-height-2xl: 2.75rem;
+
+  /* font-family variables */
+  --font-family-regular: Manrope-Regular;
+
+  /* font-weight variables */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+  --font-weight-base: var(--font-weight-normal);
+
+  /* radius variables */
+  --radius: 0.5rem;
+
+  /* breakpoints variables */
+  --xs-screen-width: 568px;
+  --sm-screen-width: 768px;
+  --md-screen-width: 1024px;
+  --lg-screen-width: 1280px;
+  --xl-screen-width: 1920px;
+  --xxl-screen-width: 2560px;
+}
+
+body {
+  color: #55595c;
+  background-color: #fafafa;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h3,
+.h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #0f172a;
+}
+.h5,
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.mt-5 {
+  margin-top: 5px;
+}
+.pure-g > div[class*='pure-u-'] {
+  padding: 0.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.main {
+  margin: 0 20px 0 20px;
+}
+
+pre,
+code {
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 11px !important;
+  display: inline-block;
+  min-width: 400px;
+}
+
+ul {
+  line-height: 1.8rem;
+  padding-left: 16px;
+}

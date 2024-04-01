@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextGen Digital
 
-## Getting Started
+## REQUIREMENTS
 
-First, run the development server:
+- nodeJS@18.16.9
+- Nx@18.0.5
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## INSTALLATION
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install Nx CLI
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`npm install -g nx`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install the project dependencies
 
-## Learn More
+`npm install`
 
-To learn more about Next.js, take a look at the following resources:
+### Enabling Git Hooks (via Husky)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This needs to be done once, after cloning the repo and running the main install.
+Run `npm run prepare`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## COMMANDS
 
-## Deploy on Vercel
+Nx is a mono-repo which allows you to run multiple projects from the same repository. When you use a generator to create an application or a library it automatically creates some commands that you can call on it.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Start a Development Server
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`npm run dev:products`
+
+Navigate to http://localhost:3001/. The app will automatically reload if you change any of the source files.
+
+### Build a Production Build
+
+`npm run build:examples`
+
+The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+### Generate a library
+
+Again use the extension, it's much easier, but you can also run `nx g @nx/react:lib my-lib` to generate a library. Libraries are nested into sub directories so be sure and generate them in the right sub folder.
+
+Libraries are shareable across libraries and applications. They can be imported from `@nextgen-digital/mylib`.
+
+## TESTS
+
+### Running unit tests
+
+Run `nx test shared-ui`, or `nx run shared-ui:test` to execute the unit tests via [Jest](https://jestjs.io).
+
+Run `nx affected:test` to execute the unit tests affected by a change.
+
+Run `npm run test-all` to exectue all unit tests in the repo. This takes advantage of Nx caching for faster tests.
+
+Run `npm run test-affected` to exectue all unit tests in the repo in CI pipeline.
+
+### Code coverage
+
+Run `nx run examples:test --codeCoverage=true` to generate code coverage for a project.
+
+Run `npm run test:coverage` to generate code coverage for the entire repo.
+
+Run `npx nx run examples:e2e` to run BDD test cases for a project.

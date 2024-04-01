@@ -1,0 +1,31 @@
+.input {
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  padding: 4px 12px;
+  display: flex;
+  height: 36px;
+  width: 320px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow:
+    rgb(255, 255, 255) 0px 0px 0px 0px,
+    rgb(161, 161, 170) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  transition-duration: 0.15s;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: rgba(0, 0, 0, 0) solid 2px;
+  outline-offset: 2px;
+  max-width: 320px;
+  border: 0.666667px solid rgb(228, 228, 231);
+}
+
+.label {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: rgb(9, 9, 11);
+  font-family: __GeistSans_343187, __GeistSans_Fallback_343187;
+  background-color: rgb(255, 255, 255);
+}

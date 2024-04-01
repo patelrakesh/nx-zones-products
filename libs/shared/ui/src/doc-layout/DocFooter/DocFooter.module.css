@@ -1,0 +1,29 @@
+.footer {
+  background-color: #f3f4f6;
+}
+
+.footerInner {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 90rem;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  color: #4b5563;
+}
+
+.horizontalLine {
+  margin: 0;
+  border: 0 solid #e5e7eb;
+  border-top-width: 1px;
+  height: 0;
+}
+
+@media (min-width: 768px) {
+  .footerInner {
+    justify-content: flex-start;
+  }
+}

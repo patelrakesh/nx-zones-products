@@ -1,0 +1,46 @@
+{
+  "node": {
+    "9aec6869cf6c15b42ec836898fbdfbd1e6def358": {
+      "workers": {
+        "app/page": "(rsc)/../../node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedLayout%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedHead%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedBody%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fproduct-details%2FProductInfo%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2FStaticHeader%2Findex.tsx%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "8fb690f82ced25e611ccd6eaa15ed5378326242d": {
+      "workers": {
+        "app/page": "(rsc)/../../node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedLayout%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedHead%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedBody%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fproduct-details%2FProductInfo%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2FStaticHeader%2Findex.tsx%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "9251118b1a40d25b7f9800d31c5a34a5d5fa59a1": {
+      "workers": {
+        "app/page": "(rsc)/../../node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedLayout%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedHead%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedBody%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fproduct-details%2FProductInfo%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2FStaticHeader%2Findex.tsx%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "eec542f5e023058302d243f367e111e81b8cd1b7": {
+      "workers": {
+        "app/page": "(rsc)/../../node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedLayout%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedHead%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedBody%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fproduct-details%2FProductInfo%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2FStaticHeader%2Findex.tsx%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "5f91d4b237ba614f52e6f491587e9292fb9d055f": {
+      "workers": {
+        "app/page": "(rsc)/../../node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedLayout%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedHead%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fshared-layout%2FSharedBody%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2Fproduct-details%2FProductInfo%2Findex.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2Frakpatel2%2FDesktop%2Fproject%2Fnext-poc-poc-nx%40ae44e37276d%2Flibs%2Fshared%2Fui%2Fsrc%2FStaticHeader%2Findex.tsx%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "RJIuz+I1zupNc9j+S0S25gKuh3I/LifZBnXAAo2mZ1Y="
+}

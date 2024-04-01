@@ -1,0 +1,911 @@
+{
+  "meta": {
+    "timestamp": "1710859271926",
+    "cxpCorrelationId": "2024-03-19T14:41:11.+0000:dc43bcf14dca6a8b:cxp-browsing-services-764779d6d4-b4xmk:eksnsprodw"
+  },
+  "data": {
+    "gridWall": {
+      "isBundleGW": false,
+      "is5gFlowGW": false,
+      "refinements": [
+        {
+          "refinementName": "Brand",
+          "refinementDisplayName": "Brand",
+          "filter": "",
+          "refinementOptions": [
+            {
+              "count": "3",
+              "isSelected": true,
+              "displayName": "Motorola",
+              "displayContent": "Motorola"
+            }
+          ]
+        },
+        {
+          "refinementName": "Price",
+          "refinementDisplayName": "Price",
+          "filter": "sku_preferred_dpp_price_tradeIn_EUP_f",
+          "refinementOptions": [
+            {
+              "count": "2",
+              "isSelected": false,
+              "displayName": "$0-$10",
+              "displayContent": "$0-$10"
+            },
+            {
+              "count": "1",
+              "isSelected": false,
+              "displayName": "$10-$20",
+              "displayContent": "$10-$20"
+            }
+          ]
+        }
+      ],
+      "sortOptions": [
+        {
+          "isSelected": "false",
+          "label": "Newest",
+          "value": "product_start_date_dt desc"
+        },
+        {
+          "isSelected": "true",
+          "label": "Featured",
+          "value": ""
+        }
+      ],
+      "paymentOptions": [
+        {
+          "isSelected": true,
+          "label": "Monthly Payment",
+          "value": "monthly payment"
+        },
+        {
+          "isSelected": false,
+          "label": "Retail Price",
+          "value": "retail price"
+        }
+      ],
+      "pagination": {
+        "totalNumberRecords": "3"
+      },
+      "productList": [
+        {
+          "productId": "dev15840167",
+          "seqNo": "1",
+          "productDisplayName": "one 5G UW ace",
+          "deviceWishListCount": "1",
+          "defaultSKU": "MOTXT21131",
+          "brandName": "Motorola",
+          "productType": "device",
+          "favoriteId": null,
+          "inFavorite": false,
+          "operatingSystem": "Android",
+          "isE911Address": false,
+          "isNumberShareCapable": false,
+          "isNumberShareMandatory": false,
+          "startDate": {
+            "date": "07-08-2021",
+            "dateTime": "07-08-2021 12:00:00 AM",
+            "dateLong": 1625716800000
+          },
+          "isPromoBoostedDevice": false,
+          "rating": {
+            "numberOfReviews": "321",
+            "averageRating": "3.4517",
+            "productId": null,
+            "batteryLife": null,
+            "callQuality": null,
+            "design": null,
+            "display": null,
+            "easeOfUse": null,
+            "features": null,
+            "percentRecommended": null,
+            "performance": null
+          },
+          "deviceRestricted": false,
+          "childSkus": [
+            {
+              "sorId": "MOTXT21131",
+              "skuId": "sku4530286",
+              "prodCode5": "ISL",
+              "capacitySize": 64,
+              "capacityUnit": "64 GB",
+              "capacity": "64 GB",
+              "price": {
+                "devicePaymentPrice": [
+                  {
+                    "allPromotions": [
+                      {
+                        "promoBadgeMessages": [
+                          {
+                            "badgeText": "Get it free.  ",
+                            "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=NSE&loanTerm=36",
+                            "masterpageId": "GW",
+                            "pageId": "GW",
+                            "placement": "ITEM-HEADER",
+                            "offerType": "BIC_FREE",
+                            "flow": "NSE",
+                            "aemOfferIds": [],
+                            "promoOverlayEnable": true,
+                            "promotionId": "promo4362120",
+                            "choiceOffer": false
+                          },
+                          {
+                            "badgeText": "Get it free.  ",
+                            "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=AAL&loanTerm=36",
+                            "masterpageId": "GW",
+                            "pageId": "GW",
+                            "placement": "ITEM-HEADER",
+                            "offerType": "BIC_FREE",
+                            "flow": "AAL",
+                            "aemOfferIds": [],
+                            "promoOverlayEnable": true,
+                            "promotionId": "promo4362120",
+                            "choiceOffer": false
+                          }
+                        ],
+                        "discountedPrice": 0.0,
+                        "contractDuration": 36,
+                        "contractText": "Monthly payments shown are for customers who qualify to pay $0 Down, $0.00/mo. for 36 months; 0% APR. Retail Price: $299.99",
+                        "promoType": "BIC",
+                        "promotionId": "promo4362120",
+                        "isEntryPointOffer": false,
+                        "isStrategicOffer": false,
+                        "isCachedOffer": false,
+                        "sedOfferId": "412808",
+                        "eligibleFlows": ["AAL", "NSE"],
+                        "eligibleClientIds": [],
+                        "inEligibleClientIds": [],
+                        "defaultIntent": ["AAL", "NSE"],
+                        "campaignIds": [],
+                        "targetedOrCmpEligible": false,
+                        "promoPriority": 200,
+                        "online": "",
+                        "lineRequired": "New line req'd.",
+                        "flashSale": "",
+                        "discAmount": 299.99,
+                        "discountedPricePercentage": 100.0,
+                        "getProductsCategory": "",
+                        "getProductMaxPurch": 0.0,
+                        "buyProductMaxPurch": 299.99,
+                        "upToFlag": true,
+                        "upto": "up to",
+                        "planReqmt": "Unlimited Welcome, Unlimited Plus or Unlimited Ultimate plans required.",
+                        "selectPlan": "Select Unlimited plan required.",
+                        "strategicBanner": ""
+                      },
+                      {
+                        "promoBadgeMessages": [
+                          {
+                            "badgeText": "Save $100.  ",
+                            "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362803&deviceId=dev15840167&skuId=sku4530286&flow=EUP&loanTerm=36",
+                            "masterpageId": "GW",
+                            "pageId": "GW",
+                            "placement": "ITEM-HEADER",
+                            "offerType": "BIC_EXACT",
+                            "flow": "EUP",
+                            "aemOfferIds": [],
+                            "promoOverlayEnable": true,
+                            "promotionId": "promo4362803",
+                            "choiceOffer": false
+                          }
+                        ],
+                        "discountedPrice": 5.55,
+                        "contractDuration": 36,
+                        "contractText": "Monthly payments shown are for customers who qualify to pay $0 Down, $5.55/mo. for 36 months; 0% APR. Retail Price: $299.99",
+                        "promoType": "BIC",
+                        "promotionId": "promo4362803",
+                        "isEntryPointOffer": false,
+                        "isStrategicOffer": false,
+                        "isCachedOffer": false,
+                        "sedOfferId": "413736",
+                        "eligibleFlows": ["EUP"],
+                        "eligibleClientIds": [],
+                        "inEligibleClientIds": [],
+                        "campaignIds": [],
+                        "targetedOrCmpEligible": false,
+                        "promoPriority": 200,
+                        "online": "",
+                        "lineRequired": "Upgrade req'd.",
+                        "flashSale": "",
+                        "discAmount": 100.0,
+                        "discountedPricePercentage": 33.0,
+                        "getProductsCategory": "",
+                        "getProductMaxPurch": 0.0,
+                        "buyProductMaxPurch": 299.99,
+                        "upToFlag": true,
+                        "upto": "up to",
+                        "planReqmt": "Any plan.",
+                        "selectPlan": "Any plan.",
+                        "strategicBanner": ""
+                      }
+                    ],
+                    "promoBadgeMessages": [
+                      {
+                        "badgeText": "Get it free.  ",
+                        "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=NSE&loanTerm=36",
+                        "masterpageId": "GW",
+                        "pageId": "GW",
+                        "placement": "ITEM-HEADER",
+                        "offerType": "BIC_FREE",
+                        "flow": "NSE",
+                        "aemOfferIds": [],
+                        "promoOverlayEnable": true,
+                        "promotionId": "promo4362120",
+                        "choiceOffer": false
+                      },
+                      {
+                        "badgeText": "Get it free.  ",
+                        "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=AAL&loanTerm=36",
+                        "masterpageId": "GW",
+                        "pageId": "GW",
+                        "placement": "ITEM-HEADER",
+                        "offerType": "BIC_FREE",
+                        "flow": "AAL",
+                        "aemOfferIds": [],
+                        "promoOverlayEnable": true,
+                        "promotionId": "promo4362120",
+                        "choiceOffer": false
+                      }
+                    ],
+                    "originalPrice": 8.33,
+                    "discountedPrice": 0.0,
+                    "contractDuration": 36,
+                    "discountedPricePercentage": 100.0,
+                    "contractText": "Monthly payments shown are for customers who qualify to pay $0 Down, $8.33/mo. for 36 months; 0% APR. Retail Price: $299.99",
+                    "dpTermPrices": {
+                      "downPayment": 0,
+                      "downPaymentRequired": false,
+                      "upgradeOptionCode": "DP",
+                      "dpTerm": 36,
+                      "ugradeEligibilityCategory": [],
+                      "firstMonthPrice": 8.44,
+                      "remainingMonthPrice": 8.33
+                    },
+                    "promoType": "BIC",
+                    "promotionId": "promo4362120",
+                    "eligibleFlows": ["AAL", "NSE"],
+                    "targetedOrCmpEligible": false
+                  }
+                ],
+                "fullRetailPrice": {
+                  "allPromotions": [
+                    {
+                      "promoBadgeMessages": [
+                        {
+                          "badgeText": "Get it free.  ",
+                          "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=NSE&loanTerm=0",
+                          "masterpageId": "GW",
+                          "pageId": "GW",
+                          "placement": "ITEM-HEADER",
+                          "offerType": "BIC_FREE",
+                          "flow": "NSE",
+                          "aemOfferIds": [],
+                          "promoOverlayEnable": true,
+                          "promotionId": "promo4362120",
+                          "choiceOffer": false
+                        },
+                        {
+                          "badgeText": "Get it free.  ",
+                          "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=AAL&loanTerm=0",
+                          "masterpageId": "GW",
+                          "pageId": "GW",
+                          "placement": "ITEM-HEADER",
+                          "offerType": "BIC_FREE",
+                          "flow": "AAL",
+                          "aemOfferIds": [],
+                          "promoOverlayEnable": true,
+                          "promotionId": "promo4362120",
+                          "choiceOffer": false
+                        }
+                      ],
+                      "discountedPrice": 0.0,
+                      "contractText": "Full Retail Price",
+                      "promoType": "BIC",
+                      "promotionId": "promo4362120",
+                      "isEntryPointOffer": false,
+                      "isStrategicOffer": false,
+                      "isCachedOffer": false,
+                      "sedOfferId": "412808",
+                      "eligibleFlows": ["AAL", "NSE"],
+                      "eligibleClientIds": [],
+                      "inEligibleClientIds": [],
+                      "defaultIntent": ["AAL", "NSE"],
+                      "campaignIds": [],
+                      "targetedOrCmpEligible": false,
+                      "promoPriority": 200,
+                      "online": "",
+                      "lineRequired": "New line req'd.",
+                      "flashSale": "",
+                      "discAmount": 299.99,
+                      "discountedPricePercentage": 100.0,
+                      "getProductsCategory": "",
+                      "getProductMaxPurch": 0.0,
+                      "buyProductMaxPurch": 299.99,
+                      "upToFlag": true,
+                      "upto": "up to",
+                      "planReqmt": "Unlimited Welcome, Unlimited Plus or Unlimited Ultimate plans required.",
+                      "selectPlan": "Select Unlimited plan required.",
+                      "strategicBanner": ""
+                    },
+                    {
+                      "promoBadgeMessages": [
+                        {
+                          "badgeText": "Save $100.  ",
+                          "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362803&deviceId=dev15840167&skuId=sku4530286&flow=EUP&loanTerm=0",
+                          "masterpageId": "GW",
+                          "pageId": "GW",
+                          "placement": "ITEM-HEADER",
+                          "offerType": "BIC_EXACT",
+                          "flow": "EUP",
+                          "aemOfferIds": [],
+                          "promoOverlayEnable": true,
+                          "promotionId": "promo4362803",
+                          "choiceOffer": false
+                        }
+                      ],
+                      "discountedPrice": 199.99,
+                      "contractText": "Full Retail Price",
+                      "promoType": "BIC",
+                      "promotionId": "promo4362803",
+                      "isEntryPointOffer": false,
+                      "isStrategicOffer": false,
+                      "isCachedOffer": false,
+                      "sedOfferId": "413736",
+                      "eligibleFlows": ["EUP"],
+                      "eligibleClientIds": [],
+                      "inEligibleClientIds": [],
+                      "campaignIds": [],
+                      "targetedOrCmpEligible": false,
+                      "promoPriority": 200,
+                      "online": "",
+                      "lineRequired": "Upgrade req'd.",
+                      "flashSale": "",
+                      "discAmount": 100.0,
+                      "discountedPricePercentage": 33.0,
+                      "getProductsCategory": "",
+                      "getProductMaxPurch": 0.0,
+                      "buyProductMaxPurch": 299.99,
+                      "upToFlag": true,
+                      "upto": "up to",
+                      "planReqmt": "Any plan.",
+                      "selectPlan": "Any plan.",
+                      "strategicBanner": ""
+                    }
+                  ],
+                  "promoBadgeMessages": [
+                    {
+                      "badgeText": "Get it free.  ",
+                      "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=NSE&loanTerm=0",
+                      "masterpageId": "GW",
+                      "pageId": "GW",
+                      "placement": "ITEM-HEADER",
+                      "offerType": "BIC_FREE",
+                      "flow": "NSE",
+                      "aemOfferIds": [],
+                      "promoOverlayEnable": true,
+                      "promotionId": "promo4362120",
+                      "choiceOffer": false
+                    },
+                    {
+                      "badgeText": "Get it free.  ",
+                      "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=AAL&loanTerm=0",
+                      "masterpageId": "GW",
+                      "pageId": "GW",
+                      "placement": "ITEM-HEADER",
+                      "offerType": "BIC_FREE",
+                      "flow": "AAL",
+                      "aemOfferIds": [],
+                      "promoOverlayEnable": true,
+                      "promotionId": "promo4362120",
+                      "choiceOffer": false
+                    }
+                  ],
+                  "originalPrice": 299.99,
+                  "contractText": "Full Retail Price",
+                  "promoType": "BIC",
+                  "promotionId": "promo4362120",
+                  "eligibleFlows": ["AAL", "NSE"],
+                  "targetedOrCmpEligible": false
+                },
+                "preferredTerm": 36
+              },
+              "inventoryDetails": {
+                "dFillInventory": {
+                  "isAvailable": false,
+                  "isBackorder": false,
+                  "isDeliverBy": false,
+                  "isPreOrder": false,
+                  "isShipBy": false,
+                  "isInStock": true,
+                  "qtyAvailable": 1032
+                },
+                "isIspuAvailable": true
+              },
+              "imageUrlMap": {
+                "defaultImage": "https://ss7.vzw.com/is/image/VerizonWireless/moto-one-5g-uw-ace-kiev-motxt21131-na-basicpack-molten-lava",
+                "largeImage": "https://ss7.vzw.com/is/image/VerizonWireless/moto-one-5g-uw-ace-kiev-motxt21131-na-basicpack-molten-lava?$device-lg$",
+                "mediumImage": "https://ss7.vzw.com/is/image/VerizonWireless/moto-one-5g-uw-ace-kiev-motxt21131-na-basicpack-molten-lava?$device-med$",
+                "miniImage": "https://ss7.vzw.com/is/image/VerizonWireless/moto-one-5g-uw-ace-kiev-motxt21131-na-basicpack-molten-lava?$device-mini$",
+                "thumbImage": "https://ss7.vzw.com/is/image/VerizonWireless/moto-one-5g-uw-ace-kiev-motxt21131-na-basicpack-molten-lava?$device-thumb$"
+              },
+              "color": {
+                "colorCssStyle": "#231520",
+                "displayName": "Volcanic Grey"
+              },
+              "canonicalUrl": "smartphones/motorola-one-5g-uw-ace/",
+              "isHumDevice": false,
+              "skuFilters": {
+                "deviceFilterType": "Smartphones"
+              },
+              "isPreconfigureEnabled": false,
+              "hasAccessoryBMSMPromo": false,
+              "recommended": false
+            }
+          ],
+          "categoryNames": ["shop/online/free-cell-phones/"],
+          "isIconicPhone": false,
+          "isCPO": false,
+          "expressFlow": false,
+          "sortApplied": false,
+          "defaultSkuVersion2": true,
+          "defaultSKUObj": {
+            "sorId": "MOTXT21131",
+            "skuId": "sku4530286",
+            "prodCode5": "ISL",
+            "capacitySize": 64,
+            "capacityUnit": "64 GB",
+            "capacity": "64 GB",
+            "price": {
+              "devicePaymentPrice": [
+                {
+                  "allPromotions": [
+                    {
+                      "promoBadgeMessages": [
+                        {
+                          "badgeText": "Get it free.  ",
+                          "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=NSE&loanTerm=36",
+                          "masterpageId": "GW",
+                          "pageId": "GW",
+                          "placement": "ITEM-HEADER",
+                          "offerType": "BIC_FREE",
+                          "flow": "NSE",
+                          "aemOfferIds": [],
+                          "promoOverlayEnable": true,
+                          "promotionId": "promo4362120",
+                          "choiceOffer": false
+                        },
+                        {
+                          "badgeText": "Get it free.  ",
+                          "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=AAL&loanTerm=36",
+                          "masterpageId": "GW",
+                          "pageId": "GW",
+                          "placement": "ITEM-HEADER",
+                          "offerType": "BIC_FREE",
+                          "flow": "AAL",
+                          "aemOfferIds": [],
+                          "promoOverlayEnable": true,
+                          "promotionId": "promo4362120",
+                          "choiceOffer": false
+                        }
+                      ],
+                      "discountedPrice": 0.0,
+                      "contractDuration": 36,
+                      "contractText": "Monthly payments shown are for customers who qualify to pay $0 Down, $0.00/mo. for 36 months; 0% APR. Retail Price: $299.99",
+                      "promoType": "BIC",
+                      "promotionId": "promo4362120",
+                      "isEntryPointOffer": false,
+                      "isStrategicOffer": false,
+                      "isCachedOffer": false,
+                      "sedOfferId": "412808",
+                      "eligibleFlows": ["AAL", "NSE"],
+                      "eligibleClientIds": [],
+                      "inEligibleClientIds": [],
+                      "defaultIntent": ["AAL", "NSE"],
+                      "campaignIds": [],
+                      "targetedOrCmpEligible": false,
+                      "promoPriority": 200,
+                      "online": "",
+                      "lineRequired": "New line req'd.",
+                      "flashSale": "",
+                      "discAmount": 299.99,
+                      "discountedPricePercentage": 100.0,
+                      "getProductsCategory": "",
+                      "getProductMaxPurch": 0.0,
+                      "buyProductMaxPurch": 299.99,
+                      "upToFlag": true,
+                      "upto": "up to",
+                      "planReqmt": "Unlimited Welcome, Unlimited Plus or Unlimited Ultimate plans required.",
+                      "selectPlan": "Select Unlimited plan required.",
+                      "strategicBanner": ""
+                    },
+                    {
+                      "promoBadgeMessages": [
+                        {
+                          "badgeText": "Save $100.  ",
+                          "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362803&deviceId=dev15840167&skuId=sku4530286&flow=EUP&loanTerm=36",
+                          "masterpageId": "GW",
+                          "pageId": "GW",
+                          "placement": "ITEM-HEADER",
+                          "offerType": "BIC_EXACT",
+                          "flow": "EUP",
+                          "aemOfferIds": [],
+                          "promoOverlayEnable": true,
+                          "promotionId": "promo4362803",
+                          "choiceOffer": false
+                        }
+                      ],
+                      "discountedPrice": 5.55,
+                      "contractDuration": 36,
+                      "contractText": "Monthly payments shown are for customers who qualify to pay $0 Down, $5.55/mo. for 36 months; 0% APR. Retail Price: $299.99",
+                      "promoType": "BIC",
+                      "promotionId": "promo4362803",
+                      "isEntryPointOffer": false,
+                      "isStrategicOffer": false,
+                      "isCachedOffer": false,
+                      "sedOfferId": "413736",
+                      "eligibleFlows": ["EUP"],
+                      "eligibleClientIds": [],
+                      "inEligibleClientIds": [],
+                      "campaignIds": [],
+                      "targetedOrCmpEligible": false,
+                      "promoPriority": 200,
+                      "online": "",
+                      "lineRequired": "Upgrade req'd.",
+                      "flashSale": "",
+                      "discAmount": 100.0,
+                      "discountedPricePercentage": 33.0,
+                      "getProductsCategory": "",
+                      "getProductMaxPurch": 0.0,
+                      "buyProductMaxPurch": 299.99,
+                      "upToFlag": true,
+                      "upto": "up to",
+                      "planReqmt": "Any plan.",
+                      "selectPlan": "Any plan.",
+                      "strategicBanner": ""
+                    }
+                  ],
+                  "promoBadgeMessages": [
+                    {
+                      "badgeText": "Get it free.  ",
+                      "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=NSE&loanTerm=36",
+                      "masterpageId": "GW",
+                      "pageId": "GW",
+                      "placement": "ITEM-HEADER",
+                      "offerType": "BIC_FREE",
+                      "flow": "NSE",
+                      "aemOfferIds": [],
+                      "promoOverlayEnable": true,
+                      "promotionId": "promo4362120",
+                      "choiceOffer": false
+                    },
+                    {
+                      "badgeText": "Get it free.  ",
+                      "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=AAL&loanTerm=36",
+                      "masterpageId": "GW",
+                      "pageId": "GW",
+                      "placement": "ITEM-HEADER",
+                      "offerType": "BIC_FREE",
+                      "flow": "AAL",
+                      "aemOfferIds": [],
+                      "promoOverlayEnable": true,
+                      "promotionId": "promo4362120",
+                      "choiceOffer": false
+                    }
+                  ],
+                  "originalPrice": 8.33,
+                  "discountedPrice": 0.0,
+                  "contractDuration": 36,
+                  "discountedPricePercentage": 100.0,
+                  "contractText": "Monthly payments shown are for customers who qualify to pay $0 Down, $8.33/mo. for 36 months; 0% APR. Retail Price: $299.99",
+                  "dpTermPrices": {
+                    "downPayment": 0,
+                    "downPaymentRequired": false,
+                    "upgradeOptionCode": "DP",
+                    "dpTerm": 36,
+                    "ugradeEligibilityCategory": [],
+                    "firstMonthPrice": 8.44,
+                    "remainingMonthPrice": 8.33
+                  },
+                  "promoType": "BIC",
+                  "promotionId": "promo4362120",
+                  "eligibleFlows": ["AAL", "NSE"],
+                  "targetedOrCmpEligible": false
+                }
+              ],
+              "fullRetailPrice": {
+                "allPromotions": [
+                  {
+                    "promoBadgeMessages": [
+                      {
+                        "badgeText": "Get it free.  ",
+                        "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=NSE&loanTerm=0",
+                        "masterpageId": "GW",
+                        "pageId": "GW",
+                        "placement": "ITEM-HEADER",
+                        "offerType": "BIC_FREE",
+                        "flow": "NSE",
+                        "aemOfferIds": [],
+                        "promoOverlayEnable": true,
+                        "promotionId": "promo4362120",
+                        "choiceOffer": false
+                      },
+                      {
+                        "badgeText": "Get it free.  ",
+                        "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=AAL&loanTerm=0",
+                        "masterpageId": "GW",
+                        "pageId": "GW",
+                        "placement": "ITEM-HEADER",
+                        "offerType": "BIC_FREE",
+                        "flow": "AAL",
+                        "aemOfferIds": [],
+                        "promoOverlayEnable": true,
+                        "promotionId": "promo4362120",
+                        "choiceOffer": false
+                      }
+                    ],
+                    "discountedPrice": 0.0,
+                    "contractText": "Full Retail Price",
+                    "promoType": "BIC",
+                    "promotionId": "promo4362120",
+                    "isEntryPointOffer": false,
+                    "isStrategicOffer": false,
+                    "isCachedOffer": false,
+                    "sedOfferId": "412808",
+                    "eligibleFlows": ["AAL", "NSE"],
+                    "eligibleClientIds": [],
+                    "inEligibleClientIds": [],
+                    "defaultIntent": ["AAL", "NSE"],
+                    "campaignIds": [],
+                    "targetedOrCmpEligible": false,
+                    "promoPriority": 200,
+                    "online": "",
+                    "lineRequired": "New line req'd.",
+                    "flashSale": "",
+                    "discAmount": 299.99,
+                    "discountedPricePercentage": 100.0,
+                    "getProductsCategory": "",
+                    "getProductMaxPurch": 0.0,
+                    "buyProductMaxPurch": 299.99,
+                    "upToFlag": true,
+                    "upto": "up to",
+                    "planReqmt": "Unlimited Welcome, Unlimited Plus or Unlimited Ultimate plans required.",
+                    "selectPlan": "Select Unlimited plan required.",
+                    "strategicBanner": ""
+                  },
+                  {
+                    "promoBadgeMessages": [
+                      {
+                        "badgeText": "Save $100.  ",
+                        "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362803&deviceId=dev15840167&skuId=sku4530286&flow=EUP&loanTerm=0",
+                        "masterpageId": "GW",
+                        "pageId": "GW",
+                        "placement": "ITEM-HEADER",
+                        "offerType": "BIC_EXACT",
+                        "flow": "EUP",
+                        "aemOfferIds": [],
+                        "promoOverlayEnable": true,
+                        "promotionId": "promo4362803",
+                        "choiceOffer": false
+                      }
+                    ],
+                    "discountedPrice": 199.99,
+                    "contractText": "Full Retail Price",
+                    "promoType": "BIC",
+                    "promotionId": "promo4362803",
+                    "isEntryPointOffer": false,
+                    "isStrategicOffer": false,
+                    "isCachedOffer": false,
+                    "sedOfferId": "413736",
+                    "eligibleFlows": ["EUP"],
+                    "eligibleClientIds": [],
+                    "inEligibleClientIds": [],
+                    "campaignIds": [],
+                    "targetedOrCmpEligible": false,
+                    "promoPriority": 200,
+                    "online": "",
+                    "lineRequired": "Upgrade req'd.",
+                    "flashSale": "",
+                    "discAmount": 100.0,
+                    "discountedPricePercentage": 33.0,
+                    "getProductsCategory": "",
+                    "getProductMaxPurch": 0.0,
+                    "buyProductMaxPurch": 299.99,
+                    "upToFlag": true,
+                    "upto": "up to",
+                    "planReqmt": "Any plan.",
+                    "selectPlan": "Any plan.",
+                    "strategicBanner": ""
+                  }
+                ],
+                "promoBadgeMessages": [
+                  {
+                    "badgeText": "Get it free.  ",
+                    "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=NSE&loanTerm=0",
+                    "masterpageId": "GW",
+                    "pageId": "GW",
+                    "placement": "ITEM-HEADER",
+                    "offerType": "BIC_FREE",
+                    "flow": "NSE",
+                    "aemOfferIds": [],
+                    "promoOverlayEnable": true,
+                    "promotionId": "promo4362120",
+                    "choiceOffer": false
+                  },
+                  {
+                    "badgeText": "Get it free.  ",
+                    "badgeToolTipUrl": "/us/promotion/details?promoId=promo4362120&deviceId=dev15840167&skuId=sku4530286&flow=AAL&loanTerm=0",
+                    "masterpageId": "GW",
+                    "pageId": "GW",
+                    "placement": "ITEM-HEADER",
+                    "offerType": "BIC_FREE",
+                    "flow": "AAL",
+                    "aemOfferIds": [],
+                    "promoOverlayEnable": true,
+                    "promotionId": "promo4362120",
+                    "choiceOffer": false
+                  }
+                ],
+                "originalPrice": 299.99,
+                "contractText": "Full Retail Price",
+                "promoType": "BIC",
+                "promotionId": "promo4362120",
+                "eligibleFlows": ["AAL", "NSE"],
+                "targetedOrCmpEligible": false
+              },
+              "preferredTerm": 36
+            },
+            "inventoryDetails": {
+              "dFillInventory": {
+                "isAvailable": false,
+                "isBackorder": false,
+                "isDeliverBy": false,
+                "isPreOrder": false,
+                "isShipBy": false,
+                "isInStock": true,
+                "qtyAvailable": 1032
+              },
+              "isIspuAvailable": true
+            },
+            "imageUrlMap": {
+              "defaultImage": "https://ss7.vzw.com/is/image/VerizonWireless/moto-one-5g-uw-ace-kiev-motxt21131-na-basicpack-molten-lava",
+              "largeImage": "https://ss7.vzw.com/is/image/VerizonWireless/moto-one-5g-uw-ace-kiev-motxt21131-na-basicpack-molten-lava?$device-lg$",
+              "mediumImage": "https://ss7.vzw.com/is/image/VerizonWireless/moto-one-5g-uw-ace-kiev-motxt21131-na-basicpack-molten-lava?$device-med$",
+              "miniImage": "https://ss7.vzw.com/is/image/VerizonWireless/moto-one-5g-uw-ace-kiev-motxt21131-na-basicpack-molten-lava?$device-mini$",
+              "thumbImage": "https://ss7.vzw.com/is/image/VerizonWireless/moto-one-5g-uw-ace-kiev-motxt21131-na-basicpack-molten-lava?$device-thumb$"
+            },
+            "color": {
+              "colorCssStyle": "#231520",
+              "displayName": "Volcanic Grey"
+            },
+            "canonicalUrl": "smartphones/motorola-one-5g-uw-ace/",
+            "isHumDevice": false,
+            "skuFilters": {
+              "deviceFilterType": "Smartphones"
+            },
+            "isPreconfigureEnabled": false,
+            "hasAccessoryBMSMPromo": false,
+            "recommended": false
+          }
+        }
+      ],
+      "fraudInfo": {
+        "fraud_C": false,
+        "fraud_M": false,
+        "fraud_V": false,
+        "fraud_R": false
+      },
+      "breadCrumbs": {
+        "refinements": [
+          {
+            "name": "Home",
+            "type": "static",
+            "link": "/"
+          },
+          {
+            "name": "Free Cell Phones",
+            "type": "category",
+            "link": "/shop-online-free-cell-phones-/"
+          }
+        ]
+      },
+      "unlockDeviceGW": false,
+      "compareAccessories": false,
+      "showStorePickUp": true,
+      "edgeEligible": false,
+      "customerAttributes": {},
+      "wishListCount": 0
+    },
+    "accountInfo": {
+      "lastName": null,
+      "zipCode": null,
+      "myOfferAccepted": null,
+      "nickName": null,
+      "safeTechSessionId": "29bf9bb09168425e862b6ef7",
+      "processingMTN": null,
+      "accountEupDeviceType": null,
+      "zipCodePlus4": null,
+      "selectedOfferFlows": null,
+      "estTradeInValue": null,
+      "firstName": null,
+      "iwvCustomer": "false",
+      "intentType": null,
+      "preOrderMTNEnable": "false",
+      "custType": null,
+      "btaEligible": "false",
+      "state": null
+    },
+    "fiveGMobilityInfo": {
+      "fiveGToFourGOverlay": false,
+      "fiveGHomeRequired": false,
+      "fiveGUpSell": false
+    },
+    "catDL": {
+      "pageName": "motorola/shop/online/free-cell-phones/"
+    },
+    "aemContent": {
+      "statusCode": 200,
+      "statusMessage": "OK",
+      "output": {
+        "bannerContent": {
+          "gridWallBanner": [],
+          "byodBanners": []
+        },
+        "cqContent": {
+          "seo": [],
+          "gwProperties": {
+            "name": "shop--online--free-cell-phones",
+            "url": "/shop/online/free-cell-phones/",
+            "compatibilityFilter": [
+              "iPhone 15 Pro Max",
+              "iPhone 15 Pro",
+              "iPhone 15 Plus",
+              "iPhone 15",
+              "Galaxy S23 Ultra"
+            ]
+          },
+          "seoMeta": [
+            {
+              "name": "shop--online--free-cell-phones",
+              "title": "Free Cell Phones After Promo Credit: iPhone, Android | Verizon",
+              "header": "Free Cell Phones After Promo Credit",
+              "url": "https://www.verizon.com/shop/online/free-cell-phones/",
+              "metaRobot": "INDEX, FOLLOW",
+              "metaDescription": "Verizon has great free smartphone after promo credit offers, including iPhone, Samsung Galaxy, and Google Pixel. Get a free cell phone today.",
+              "footerMainHeader": "Get a Free Cell Phone After Promo Credit",
+              "footerSubHead1": "How can I get a free phone?",
+              "footerSubHead2": "Additional free and reduced price options",
+              "footerContentBlock1": [
+                {
+                  "text": "Cell phones are often associated with a high cost, which may deter people from upgrading to a new device. But that doesn't have to be the case. Verizon offers different promotions available throughout the year that can allow you to get discounted smartphones from top brands like Apple, Samsung, Google and more. Additionally, we offer many cell phones that are free after a 36 month bill incentive credit, which can be a great option for those looking for a new phone while on a budget. You are generally required to keep that line on a particular plan  in order to qualify and remain eligible to receive the bill incentive credit."
+                },
+                {
+                  "text": "If you're wondering how to get these great deals, start by exploring the multiple free phone promotion options that exist currently. Some promotions, like <a href='https://www.verizon.com/bring-your-own-device/'>bringing your own device (BYOD)</a> or <a href='https://www.verizon.com/solutions-and-services/smartphones-trade-in/'>trading-in your old smartphone</a>, can allow you to bring over or trade-in an eligible phone for a brand new one. Additionally, you can get a <a href='https://www.verizon.com/certified-pre-owned/'>certified pre-owned (“CPO”) phone</a> (including the latest <a href='https://www.verizon.com/smartphones/certified-pre-owned/apple/'>Apple</a> and <a href='https://www.verizon.com/smartphones/certified-pre-owned/samsung/'>Android</a> devices) from Verizon, with applicable promotions. Finally, there are occasions when buy-one-get-one free promotions are running, which is a great way to save if the entire family needs an upgrade."
+                },
+                {
+                  "text": "To explore which devices are currently eligible for promotions, you can browse <a href='https://www.verizon.com/deals/'>Verizon's smartphone deals</a> today."
+                }
+              ],
+              "footerContentBlock2": [
+                {
+                  "text": "In addition to Verizon's promotions and discounts, there are government programs available for both individuals and households that offer free or reduced price cell phones. In the modern age, having a phone that you and your family can rely on is essential, and programs like the <a href='https://www.verizon.com/solutions-and-services/lifeline/'>Lifeline Assistance Program</a> and Life Wireless can aid you in subsidizing a device or service if you can't cover the cost on your own. "
+                },
+                {
+                  "text": "Those who qualify for other government programs like SNAP, Medicaid, and so forth may be eligible for other free phone programs, depending on the state you live in and your preferred service provider."
+                },
+                {
+                  "text": "No matter which brand you're interested in, there is likely a phone option available to you. Between Apple, Samsung, Google and others, explore Verizon's <a href='https://www.verizon.com/deals/smartphones/'>cell phone deals</a> to learn which promotions you may be eligible for today."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "showReturnTab": false
+  },
+  "fromCache": false,
+  "seoMapRefreshed": false,
+  "iwvDeviceGW": false,
+  "success": false
+}

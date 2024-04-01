@@ -1,0 +1,30 @@
+.wrapper {
+  padding-right: 1rem;
+  color: #9a3412;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #fff7ed;
+  border: 1px solid #ffedd5;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.left {
+  padding-right: 0.5rem;
+  font-size: 1.25rem;
+  padding-left: 0.75rem;
+  user-select: none;
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.content {
+  min-width: 0;
+  line-height: 1.75rem;
+  width: 100%;
+}
+
+.content :first-child {
+  margin-top: 0;
+}

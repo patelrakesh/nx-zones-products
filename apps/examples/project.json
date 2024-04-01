@@ -1,0 +1,73 @@
+{
+  "name": "examples",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/examples",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/examples",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/assets/",
+            "output": "assets/"
+          }
+        ]
+      }
+    },
+    "dev": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "examples:build",
+        "dev": true,
+        "port": 3001,
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/assets/",
+            "output": "assets/"
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/examples/**/*.{ts,tsx,js,jsx}"],
+        "fix": true
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/examples/jest.config.ts"
+      }
+    },
+    "stylelint": {
+      "executor": "nx-stylelint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/examples/**/*.css"],
+        "fix": true
+      }
+    },
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/examples/cypress.config.ts",
+        "baseUrl": "http://localhost:3001",
+        "devServerTarget": "examples:dev",
+        "testingType": "e2e",
+        "headed": true,
+        "watch": true
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,70 @@
+.form {
+  width: 400px; /* Adjust width as needed */
+  margin: 0 auto; /* Center on the page */
+  padding: 20px;
+  border-radius: 8px; /* Add rounded corners */
+  background-color: #fff;
+}
+
+/* Style for each form group */
+.formGroup {
+  margin-bottom: 20px; /* Space between groups */
+}
+
+/* Style for labels */
+.formGroup label {
+  display: block; /* Make labels take up full width */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.button {
+  width: fit-content;
+  background-color: #62cbf5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.formGroup textarea {
+  resize: vertical; /* Prevent resizing */
+  display: block; /* Make textarea take up full width */
+  width: 100%;
+  max-width: 320px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  min-height: 100px;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.reviewDetailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.infoSection .label {
+  font-weight: bold;
+}
+
+.confirmEditButton {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 8px;
+}

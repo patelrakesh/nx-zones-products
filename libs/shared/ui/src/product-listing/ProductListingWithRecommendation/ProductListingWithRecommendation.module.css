@@ -1,0 +1,10 @@
+.plpContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 16px 8px;
+}
+
+.plpList {
+  padding: 12px;
+}

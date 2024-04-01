@@ -1,0 +1,97 @@
+.card {
+  --card-spacer-y: 1rem;
+  --card-spacer-x: 1rem;
+  --card-border-width: 1px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  color: #55595c;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  padding: 1rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.cardBody {
+  flex: 1 1 auto;
+  padding: var(--card-spacer-y) var(--card-spacer-x);
+  color: var(--card-color);
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.btn {
+  --btn-color: #55595c;
+  --btn-bg: transparent;
+  --btn-border-color: transparent;
+  --btn-border-radius: 0.375rem;
+  --btn-hover-border-color: transparent;
+  --btn-box-shadow: inset 0 1px 0 rgba(255 255 255 0.15),
+    0 1px 1px rgba(0 0 0 0.075);
+  --btn-disabled-opacity: 0.65;
+
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 0 solid #4bbf73;
+  background-color: #4bbf73;
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.btnSuccess {
+  --btn-color: #fff;
+  --btn-bg: #4bbf73;
+  --btn-hover-color: #fff;
+  --btn-hover-bg: #40a262;
+  --btn-hover-border-color: #3c995c;
+  --btn-focus-shadow-rgb: 102, 201, 136;
+  --btn-active-border-color: #388f56;
+  margin-top: 15px;
+}
+
+.btnOutlineSecondary {
+  color: #919aa1;
+  border-color: #919aa1;
+  border-width: 2px;
+  background-color: #fff;
+}
+
+.formControl {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #55595c;
+  appearance: none;
+  background-color: #f7f7f9;
+  background-clip: padding-box;
+  border: 0 solid #eceeef;
+  border-radius: 0;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "alias": "smartphones",
+    "contentTitle": "Smartphones",
+    "url": "/smartphones",
+    "label": "Smartphones"
+  },
+  {
+    "alias": "shop-samsung-smartphones",
+    "url": "/smartphones/samsung",
+    "contentTitle": "Shop  Samsung  smartphones",
+    "label": "Samsung"
+  },
+  {
+    "alias": "free-cell-phones",
+    "contentTitle": "Free Cell Phones",
+    "url": "/shop/online/free-cell-phones",
+    "label": "Free phones"
+  },
+  {
+    "alias": "connected-smartwatches",
+    "contentTitle": "Connected Smart Watches",
+    "url": "/connected-smartwatches"
+  },
+  {
+    "alias": "tablets",
+    "contentTitle": "Tablets & Laptops",
+    "url": "/tablets"
+  }
+]

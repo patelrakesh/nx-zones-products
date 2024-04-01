@@ -1,0 +1,62 @@
+{
+  "name": "products",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/products",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/products",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/assets/",
+            "output": "assets/"
+          }
+        ]
+      }
+    },
+    "dev": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "products:build",
+        "dev": true,
+        "port": 3000,
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/assets/",
+            "output": "assets/"
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/products/**/*.{ts,tsx,js,jsx}"],
+        "fix": true
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/products/jest.config.ts"
+      }
+    },
+    "stylelint": {
+      "executor": "nx-stylelint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/products/**/*.css"],
+        "fix": true
+      }
+    }
+  },
+  "tags": []
+}

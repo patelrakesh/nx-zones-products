@@ -1,0 +1,37 @@
+.nestedMenuWrapper {
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: hidden;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  list-style: outside none none;
+}
+
+.nestedMenu {
+  padding-top: 0.25rem;
+  opacity: 1;
+  transition-duration: 0.5s;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  list-style: outside none none;
+}
+
+.nestedMenu ul {
+  list-style: outside none none;
+  padding-left: 0.75rem;
+  margin-left: 0.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.nestedMenu ul::before {
+  content: '';
+  background-color: #e5e7eb;
+  left: 0;
+  width: 1px;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  position: absolute;
+}

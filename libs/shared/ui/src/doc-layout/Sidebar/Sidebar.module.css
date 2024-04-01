@@ -1,0 +1,71 @@
+.sidebar {
+  display: flex;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  flex-direction: column;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  background-color: rgba(0, 0, 0, 0);
+  bottom: auto;
+  overscroll-behavior: auto;
+  position: sticky;
+  top: 4rem;
+  width: 16rem;
+  z-index: auto;
+  backface-visibility: visible;
+  contain: none;
+  will-change: auto;
+  mask-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 20px),
+    linear-gradient(270deg, rgb(0, 0, 0) 10px, rgba(0, 0, 0, 0) 0px);
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.scrollbar {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 16px 8px 16px 16px;
+  scrollbar-color: lab(48.438 0 0 / 0.4) rgba(0, 0, 0, 0);
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  mask-image: none;
+  height: calc(100vh - 4rem);
+}
+
+.menuListWrapper {
+  opacity: 1;
+  transition-duration: 0.5s;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menuList {
+  list-style: outside none none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    transform: translateY(-100%);
+    will-change: transform, opacity;
+    contain: layout style;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 0.8s cubic-bezier(0.52, 0.16, 0.04, 1);
+    z-index: 15;
+    width: 100%;
+    overscroll-behavior: contain;
+    background-color: #fff;
+    padding-top: 4rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
+
+  .open {
+    transform: translateY(0);
+  }
+}

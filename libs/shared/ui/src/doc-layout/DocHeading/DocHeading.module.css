@@ -1,0 +1,35 @@
+.heading {
+  margin: 0;
+  color: #0f172a;
+  letter-spacing: 0em;
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin-top: 0.5rem;
+}
+
+.subHeading {
+  margin: 2.5rem 0px 0px;
+  padding-bottom: 0.25rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: #0f172a;
+  border-bottom: 1px solid hsla(0, 0%, 90%, 0.7);
+}
+
+.headingAnchor {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(209, 213, 219, 1);
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  margin-left: 0.25rem;
+  text-decoration: none;
+}
+
+.heading:hover > .headingAnchor,
+.subHeading:hover > .headingAnchor {
+  opacity: 1;
+}
